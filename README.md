@@ -65,6 +65,12 @@ The target variable is **TARGET_LifeExpectancy**, which represents the predicted
 
 ### 4. Prediction and Results
 ![image](https://github.com/user-attachments/assets/05bd7a73-fa04-42a4-82de-b970f6422629)
+![image](https://github.com/user-attachments/assets/ce9e727e-7a61-461a-b134-08ae536afbab)
+![image](https://github.com/user-attachments/assets/947107c5-d728-4b4b-88ff-53d7fff60788)
+![image](https://github.com/user-attachments/assets/4ffd781d-1b01-40cd-9f48-5de7db63f738)
+![image](https://github.com/user-attachments/assets/2087f798-ad19-4bc7-bcf5-27ab6f523a1e)
+
+
 
 - **Final Model**: The **Ridge Regression** model with alpha = 1.0 was selected as the final model. It was trained on the entire training dataset and used to generate predictions for the test dataset. The predictions were saved in `s3970066.csv`.
 
