@@ -42,6 +42,8 @@ The target variable is **TARGET_LifeExpectancy**, which represents the predicted
 - **Histograms and Distribution Analysis**: Generated histograms for all numerical features to visualize their distributions in both training and test datasets. The analysis revealed that most variables had similar distributions across the two datasets, which indicated a balanced dataset, helping ensure that the model trained effectively. The histograms also helped identify skewness in features like "HIV-AIDS" and "Measles," indicating potential areas for data transformation.
 
 - **Correlation Analysis**: Conducted correlation analysis to identify relationships between features:
+  ![image](https://github.com/user-attachments/assets/f7cce919-ea7b-4226-a127-4153ff1ea1c8)
+
   - **Strong Positive Correlations**: Life expectancy showed strong positive correlations with "IncomeCompositionOfResources" (0.798) and "Schooling" (0.716). This suggests that higher income levels and better education are significantly associated with longer life expectancy. The correlation matrix heatmap visualized these relationships, helping to identify which features could be most impactful for predicting life expectancy.
   - **Strong Negative Correlations**: "AdultMortality" was negatively correlated with life expectancy (-0.66), indicating that higher adult mortality rates were associated with lower life expectancy. Similarly, "HIV-AIDS" prevalence negatively impacted life expectancy (-0.522). Scatter plots between these features and life expectancy were used to visually confirm these relationships.
 
@@ -62,6 +64,7 @@ The target variable is **TARGET_LifeExpectancy**, which represents the predicted
 - **Feature Importance Analysis**: For Random Forest Regression, feature importances were calculated and plotted. Features like "IncomeCompositionOfResources" and "Schooling" were found to have the highest importance, reinforcing the findings from correlation analysis. This helped in understanding the contribution of each feature to the model's predictions.
 
 ### 4. Prediction and Results
+![image](https://github.com/user-attachments/assets/05bd7a73-fa04-42a4-82de-b970f6422629)
 
 - **Final Model**: The **Ridge Regression** model with alpha = 1.0 was selected as the final model. It was trained on the entire training dataset and used to generate predictions for the test dataset. The predictions were saved in `s3970066.csv`.
 
